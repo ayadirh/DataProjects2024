@@ -1,8 +1,6 @@
 ## Data Orchestration - Mage, Google Cloud, Postgres
 
-## Week 2 Homework
-
-> In case you don't get one option exactly, select the closest one 
+## Week 2 Homework 
 
 For the homework, we'll be working with the _green_ taxi dataset located here:
 
