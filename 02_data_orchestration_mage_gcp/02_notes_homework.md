@@ -46,3 +46,5 @@ How many columns need to be renamed to snake case?
 ## Question 6. Data Exporting
 
 Once exported, how many partitions (folders) are present in Google Cloud?
+
+* 95
