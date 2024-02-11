@@ -1,6 +1,6 @@
 ## Week 3 Homework
 
-or this homework we will be using the 2022 Green Taxi Trip Record Parquet Files from the New York City Taxi Data found here:
+This exercise will be using the 2022 Green Taxi Trip Record Parquet Files from the New York City Taxi Data found here:
 https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 If you are using orchestration such as Mage, Airflow or Prefect do not load the data into Big Query using the orchestrator.
 Stop with loading the files into a bucket.
@@ -15,6 +15,8 @@ After setting up the Google Cloud Credentials.
 ```bash
     gcloud auth activate-service-account --key-file ${GOOGLE_APPLICATION_CREDENTIALS}
 ```
+
+We push data to GCP Cloud Storage which are partioned by month.
 
 ```python
     import io
