@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dtc-de-course-2024-411721
+    schema: ny_taxi
+    tables:
+      - name: green_tripdata
+      - name: yellow_cab_table
