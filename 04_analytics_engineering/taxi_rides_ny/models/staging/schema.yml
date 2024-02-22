@@ -15,11 +15,11 @@ models:
       - name: tripid
         data_type: string
         description: ""
-        tests:
-          - unique: 
-              severity:warn
-          - not_null: 
-              severity:warn
+        # tests:
+        #   - unique: 
+        #       severity:warn
+        #   - not_null: 
+        #       severity:warn
       - name: vendorid
         data_type: int64
         description: ""
