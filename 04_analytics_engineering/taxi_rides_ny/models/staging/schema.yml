@@ -198,7 +198,7 @@ models:
         data_type: string
         description: ""
 
-  - name: stg_yellow_tripdata
+  - name: stg_fhv_tripdata
     description: ""
     columns:
       - name: Dispatching_base_num
