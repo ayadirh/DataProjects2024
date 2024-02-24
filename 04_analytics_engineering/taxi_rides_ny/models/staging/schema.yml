@@ -7,6 +7,11 @@ sources:
     tables:
       - name: green_tripdata
       - name: yellow_cab_table
+  - name: homework
+    database: dtc-de-course-2024-411721
+    schema: homework_week_four
+    tables:
+      - name: external_fhv_tripdata
 
 models:
   - name: stg_green_tripdata
@@ -190,5 +195,36 @@ models:
         description: ""
 
       - name: payment_type_description
+        data_type: string
+        description: ""
+
+  - name: stg_yellow_tripdata
+    description: ""
+    columns:
+      - name: Dispatching_base_num
+        data_type: string
+        description: ""
+      
+      - name: Affiliated_base_num
+        data_type: string
+        description: ""
+
+      - name: PULocationid
+        data_type: string
+        description: ""
+
+      - name: DOLocationid
+        data_type: string
+        description: ""
+
+      - name: pickup_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: dropoff_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: SR_Flag
         data_type: string
         description: ""
