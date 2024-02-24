@@ -8,8 +8,8 @@ with
         affiliated_base_number,
         pickup_datetime,
         dropoff_datetime,
-        pulocationid,
-        dolocationid,
+        pu_locationid,
+        do_locationid,
             'FHV' as service_type
         from {{ ref("stg_homework__external_fhv_tripdata") }}
     ),    
@@ -17,8 +17,8 @@ with
 select
     fhv_tripdata.dispatching_base_num,
     fhv_tripdata.affiliated_base_number,
-    fhv_tripdata.pulocationid,
-    fhv_tripdata.dolocationid,
+    fhv_tripdata.pu_locationid,
+    fhv_tripdata.do_locationid,
     pickup_zone.borough as pickup_borough,
     pickup_zone.zone as pickup_zone,
     dropoff_zone.borough as dropoff_borough,
@@ -29,7 +29,7 @@ select
 from fhv_tripdata
 inner join
     dim_zones as pickup_zone 
-    on fhv_tripdata.pickup_locationid = pickup_zone.locationid
+    on fhv_tripdata.pu_locationid = pickup_zone.locationid
 inner join
     dim_zones as dropoff_zone
-    on fhv_tripdata.dropoff_locationid = dropoff_zone.locationid
+    on fhv_tripdata.do_locationid = dropoff_zone.locationid
